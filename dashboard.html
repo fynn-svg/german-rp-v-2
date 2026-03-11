@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - German RP V2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Dashboard</h1>
+
+    <!-- Owner Buttons -->
+    <div id="owner-buttons" style="display:none;">
+        <button class="main-btn" onclick="createUser()">Benutzer erstellen</button>
+        <button class="main-btn" onclick="deleteUser()">Benutzer löschen</button>
+        <button class="main-btn" onclick="trackUser()">Tracking</button>
+    </div>
+
+    <!-- Schicht Button für alle -->
+    <div>
+        <button class="main-btn" onclick="startShift()">Schicht starten</button>
+    </div>
+
+    <button class="main-btn" onclick="window.location.href='index.html'">Logout</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="script.js"></script>
+</body>
+</html>

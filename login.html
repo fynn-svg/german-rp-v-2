@@ -5,22 +5,17 @@
 <title>Login - German RP V2</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <div class="container">
-  <h1>Login</h1>
-
-  <input type="text" id="username" placeholder="Benutzername">
-  <input type="password" id="password" placeholder="Passwort">
-  <button onclick="login()">Login</button>
-
-  <p id="loginstatus"></p>
-
-  <!-- Zurück Button -->
-  <button onclick="window.location.href='index.html'">Zurück</button>
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Benutzername">
+    <input type="password" id="password" placeholder="Passwort">
+    <button class="main-btn" onclick="login()">Login</button>
+    <p id="loginstatus"></p>
+    <button class="main-btn" onclick="window.location.href='index.html'">Zurück</button>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script src="script.js"></script>
 </body>
 </html>
